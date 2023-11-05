@@ -41,7 +41,7 @@ git命令：
 		git switch <name> 切换分支 新功能，避免歧义
 
 	16. git merge dev （假设当前在master分支）表示将dev分支合并到master分支
-
+	17. master分支改动
 
 
 .gitignore文件

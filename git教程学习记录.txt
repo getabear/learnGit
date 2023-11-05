@@ -17,3 +17,5 @@ git命令：
 		8.1 git diff HEAD 比较工作区和仓库之间的差异
 		8.2 git diff --cache 比较暂存区和仓库之间的差异
 		8.3 git diff <id1> <id2> 比较两个版本之间的差异
+
+	9. git rm 会删除工作区和暂存区的文件

@@ -35,6 +35,12 @@ git命令：
 		这几条命令说明我们远程仓库的别名是origin，对应地址是https://github.com/getabear/learnGit.git
 
 	13. git fetch 也会拉取远程分支的修改，但是他不像git pull命令一样，会进行与本地分支进行合并的操作
+	14. git branch 查看所有的分支
+		git branch <name> 创建一个分支
+	15. git checkout <name> 切换分支
+		git switch <name> 切换分支 新功能，避免歧义
+
+	16. git merge dev （假设当前在master分支）表示将dev分支合并到master分支
 
 
 

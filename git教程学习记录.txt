@@ -35,6 +35,7 @@ git命令：
 		这几条命令说明我们远程仓库的别名是origin，对应地址是https://github.com/getabear/learnGit.git
 
 	13. git fetch 也会拉取远程分支的修改，但是他不像git pull命令一样，会进行与本地分支进行合并的操作
+	14.远程分支修改
 
 
 

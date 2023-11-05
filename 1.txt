@@ -2,3 +2,14 @@ git仓库的两种创建方式
 	1. git init
 	2. git clone
   
+git命令：
+	1. git add .   将本文件夹种所有文件添加到暂存区(支持通配符，比如 git add *.txt)
+	2. git status 可以查看目前的各种状态信息， 如所在分支， 未跟踪的文件，提交到暂存区的文件等
+	3. git log 查看提交的历史信息（git log oneline 可以查看精简信息,也就是精简到一行）
+	4. git commit 将暂存区的文件提交到本地仓库
+	5. git reset 命令
+		5.1 git reset --soft   这种方法回退版本会将暂存区和工作区的内容保留
+		5.2 git reset --hard 这种方法会将暂存区和工作区的内容都删除
+		5.3 git reset --mixed 种种方法会保留工作区的内容， 删除暂存区的内容（git reset命令默认就是这种方式）
+	6.git ls-files 查看暂存区的内容
+	7. git reflog 查看操作历史

@@ -26,11 +26,15 @@ git命令：
 		git push -u origin master:main
 		表示将本地仓库和远程仓库origin关联起来，master:main表示将本地分支的master与远程仓库的main分支关联起来
 	11. git pull 将远程仓库拉取到本地
+		git pull origin main
+		表示拉取远程仓库的main分支
 	12. git remote -v 查看当前仓库所对应的远程仓库别名和地址， 例如
 		$ git remote -v
 		origin  https://github.com/getabear/learnGit.git (fetch)
 		origin  https://github.com/getabear/learnGit.git (push)
 		这几条命令说明我们远程仓库的别名是origin，对应地址是https://github.com/getabear/learnGit.git
+
+	13. git fetch 也会拉取远程分支的修改，但是他不像git pull命令一样，会进行与本地分支进行合并的操作
 
 
 

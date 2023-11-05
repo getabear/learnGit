@@ -5,6 +5,7 @@ git仓库的两种创建方式
 git命令：
 	1. git add .   将本文件夹种所有文件添加到暂存区(支持通配符，比如 git add *.txt)
 	2. git status 可以查看目前的各种状态信息， 如所在分支， 未跟踪的文件，提交到暂存区的文件等
+		2.1 git status -s 显示简略信息 （-s short）
 	3. git log 查看提交的历史信息（git log oneline 可以查看精简信息,也就是精简到一行）
 	4. git commit 将暂存区的文件提交到本地仓库
 	5. git reset 命令
@@ -19,6 +20,13 @@ git命令：
 		8.3 git diff <id1> <id2> 比较两个版本之间的差异
 
 	9. git rm 会删除工作区和暂存区的文件
+		git rm --cached 删除暂存区的文件，但是不删除工作区的文件
 
 
 .gitignore文件
+	需要注意的是 已经添加到暂存区的文件就算后面添加到.gitignore中后， git仍然可以监测到变化
+	.gitignore文件使用glob来进行文件的匹配，下面简单举例子
+	*.a 表示忽略所有的.a文件
+	！nihao.a 第一条命令忽略了所有.a文件，这条在第一条的基础上保留nihao.a文件，也就是忽略所有.a文件，除了nihao.a
+	/hello 表示忽略当前目录下的hello文件
+	build/ 表示忽略所有目录下的build文件夹

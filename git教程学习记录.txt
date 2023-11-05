@@ -22,6 +22,17 @@ git命令：
 	9. git rm 会删除工作区和暂存区的文件
 		git rm --cached 删除暂存区的文件，但是不删除工作区的文件
 
+	10. git push 将本地仓库推送到远程仓库
+		git push -u origin master:main
+		表示将本地仓库和远程仓库origin关联起来，master:main表示将本地分支的master与远程仓库的main分支关联起来
+	11. git pull 将远程仓库拉取到本地
+	12. git remote -v 查看当前仓库所对应的远程仓库别名和地址， 例如
+		$ git remote -v
+		origin  https://github.com/getabear/learnGit.git (fetch)
+		origin  https://github.com/getabear/learnGit.git (push)
+		这几条命令说明我们远程仓库的别名是origin，对应地址是https://github.com/getabear/learnGit.git
+
+
 
 .gitignore文件
 	需要注意的是 已经添加到暂存区的文件就算后面添加到.gitignore中后， git仍然可以监测到变化

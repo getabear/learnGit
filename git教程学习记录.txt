@@ -13,3 +13,4 @@ git命令：
 		5.3 git reset --mixed 种种方法会保留工作区的内容， 删除暂存区的内容（git reset命令默认就是这种方式）
 	6.git ls-files 查看暂存区的内容
 	7. git reflog 查看操作历史
+	8. git diff 默认查看工作区和暂存区之间的改动

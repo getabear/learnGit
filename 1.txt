@@ -1,0 +1,4 @@
+git仓库的两种创建方式
+	1. git init
+	2. git clone
+  

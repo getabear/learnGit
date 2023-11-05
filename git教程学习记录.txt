@@ -14,3 +14,6 @@ git命令：
 	6.git ls-files 查看暂存区的内容
 	7. git reflog 查看操作历史
 	8. git diff 默认查看工作区和暂存区之间的改动
+		8.1 git diff HEAD 比较工作区和仓库之间的差异
+		8.2 git diff --cache 比较暂存区和仓库之间的差异
+		8.3 git diff <id1> <id2> 比较两个版本之间的差异

@@ -50,6 +50,9 @@ git命令：
 		git checkout master
 		git rebase dev
 		上面两条命令就是将目前的master分支直接连接到dev分支上（以dev为基础（base）)
+	19. git tag 添加版本号
+		git tag -a v1.0 -m "完结版本"
+	20. git push origin --tags 将本地的标签推送到远程仓库
 
 .gitignore文件
 	需要注意的是 已经添加到暂存区的文件就算后面添加到.gitignore中后， git仍然可以监测到变化

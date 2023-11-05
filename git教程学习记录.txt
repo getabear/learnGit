@@ -43,7 +43,13 @@ git命令：
 
 	16. git merge dev （假设当前在master分支）表示将dev分支合并到master分支
 	17. git merge --abort 来终止合并
-
+	18. git rebase 找到两个分支的最近祖先，然后合并。 例如：
+		git checkout dev 
+		git rebase master
+		上面两条命令就是将目前的dev分支直接连接到master分支上（以master为基础（base））
+		git checkout master
+		git rebase dev
+		上面两条命令就是将目前的master分支直接连接到dev分支上（以dev为基础（base）)
 
 .gitignore文件
 	需要注意的是 已经添加到暂存区的文件就算后面添加到.gitignore中后， git仍然可以监测到变化

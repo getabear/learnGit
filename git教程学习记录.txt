@@ -8,6 +8,7 @@ git命令：
 		2.1 git status -s 显示简略信息 （-s short）
 	3. git log 查看提交的历史信息（git log oneline 可以查看精简信息,也就是精简到一行）
 	4. git commit 将暂存区的文件提交到本地仓库
+		git commit -am 将文件添加到暂存区，并将暂存区的内容提交到本地仓库
 	5. git reset 命令
 		5.1 git reset --soft   这种方法回退版本会将暂存区和工作区的内容保留
 		5.2 git reset --hard 这种方法会将暂存区和工作区的内容都删除

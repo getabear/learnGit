@@ -6,7 +6,7 @@ git命令：
 	1. git add .   将本文件夹种所有文件添加到暂存区(支持通配符，比如 git add *.txt)
 	2. git status 可以查看目前的各种状态信息， 如所在分支， 未跟踪的文件，提交到暂存区的文件等
 		2.1 git status -s 显示简略信息 （-s short）
-	3. git log 查看提交的历史信息（git log oneline 可以查看精简信息,也就是精简到一行）
+	3. git log 查看提交的历史信息（git log --oneline 可以查看精简信息,也就是精简到一行）
 	4. git commit 将暂存区的文件提交到本地仓库
 		git commit -am 将文件添加到暂存区，并将暂存区的内容提交到本地仓库
 	5. git reset 命令

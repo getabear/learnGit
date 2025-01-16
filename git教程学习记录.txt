@@ -14,7 +14,7 @@ git命令：
 		5.2 git reset --hard 这种方法会将暂存区和工作区的内容都删除
 		5.3 git reset --mixed 种种方法会保留工作区的内容， 删除暂存区的内容（git reset命令默认就是这种方式）
 	6.git ls-files 查看暂存区的内容
-	7. git reflog 查看操作历史
+	7. git reflog 查看操作历史， git log只能查询到HEAD指针及其之前的版本信息，如果版本发生过回退操作就会出现HEAD之后仍然存在历史提交版本的情况，而git log就查不到了。而git reflog则可以查到所有的历史版本。
 	8. git diff 默认查看工作区和暂存区之间的改动
 		8.1 git diff HEAD 比较工作区和仓库之间的差异
 		8.2 git diff --cached 比较暂存区和仓库之间的差异

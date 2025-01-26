@@ -4,8 +4,12 @@ git仓库的两种创建方式
 
 git版本管理：
 	1. git reset --hard  提交的版本id         	功能： 回退到对应的版本
-	2. git reflog   			功能：当版本回退以后，有时候我们又想恢复回退前的版本，此时git log无法查看到以						前的id，此时可以使用git reflog命令
+	2. git reflog   			功能：当版本回退以后，有时候我们又想恢复回退前的版本，此时git log无法查看到以前的id，此时可以使用git reflog命令
   
+git查看远程仓库以及添加远程仓库：
+	1. git remote -v 			功能： 查看远程仓库的地址
+	2. git remote add name addr 		功能： 添加一个地址为addr，名字为name的远程仓库地址
+
 git命令：
 	1. git add .   将本文件夹种所有文件添加到暂存区(支持通配符，比如 git add *.txt)
 	2. git status 可以查看目前的各种状态信息， 如所在分支， 未跟踪的文件，提交到暂存区的文件等
